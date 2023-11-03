@@ -1,0 +1,61 @@
+﻿@model CustomerProject.Models.Customer
+@{
+    ViewBag.Title = "CustomerDetail Page";
+}
+
+<div class="row">
+    <div class="form-horizontal">
+        <hr />
+        <div class="form-group">
+            <table class="table table-responsive" style="width:400px">
+
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.customerName)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.customerSurname)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.gender)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.birthdate)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.city.name)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.address)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.isDisabled)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.phoneNumber)
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => Model.email)
+                    </td>
+                </tr>
+
+            </table>
+        </div>
+    </div>
+</div>
